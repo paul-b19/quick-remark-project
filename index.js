@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 
 // IMPORT MODELS
 require('./models/Product');
+require('./models/User');
+require('./models/Remark');
 
 const app = express();
 
@@ -14,6 +16,8 @@ app.use(bodyParser.json());
 
 //IMPORT ROUTES
 require('./routes/productRoutes')(app);
+require('./routes/userRoutes')(app);
+require('./routes/remarkRoutes')(app);
 
 /* This will redirect all the requests to our frontend application, 
 unless we specify any route before this code. */
