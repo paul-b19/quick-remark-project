@@ -3,9 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 // IMPORT MODELS
-require('./models/Product');
 require('./models/User');
-require('./models/Remark');
 
 const app = express();
 
@@ -15,9 +13,7 @@ mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost:27017/quick-rem
 app.use(bodyParser.json());
 
 //IMPORT ROUTES
-require('./routes/productRoutes')(app);
 require('./routes/userRoutes')(app);
-require('./routes/remarkRoutes')(app);
 
 /* This will redirect all the requests to our frontend application, 
 unless we specify any route before this code. */
