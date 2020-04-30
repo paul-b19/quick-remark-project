@@ -1,14 +1,22 @@
-import React from "react";
-import Temp from "../components/TEMP"
+import React from "react"
+// import Temp from "../components/TEMP"
+import Header from "../components/Header"
+import Remark from "../components/Remark"
+import Footer from "../components/Footer"
+import Sidebar from "../containers/Sidebar"
 
 
-function Application() {
+const Application = () => {
 
   return (
-    <div>
-      <Temp />
+    <div className="application">
+      {/* <Temp /> */}
+      <Header />
+      <Remark />
+      <Footer />
+      <Sidebar />
     </div>
-  );
+  )
 }
 
-export default Application;
+export default Application

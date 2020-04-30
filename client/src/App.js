@@ -1,14 +1,14 @@
-import React from "react";
+import React from "react"
 import Application from "./containers/Application"
 
 
-function App() {
+const App = () => {
 
   return (
     <div>
       <Application />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
