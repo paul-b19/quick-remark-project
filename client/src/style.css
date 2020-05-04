@@ -11,7 +11,9 @@ body {
 .header,
 .footer,
 .remark, 
-.sidebar {
+.sidebar,
+.menu,
+.collection {
   /* margin: 20px; */
   padding: 20px;
   border: black 2px solid;
@@ -19,27 +21,47 @@ body {
 }
 
 .application {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 100%;
 }
 
 .header {
   width: 60%;
-  height: 15%;
+  height: 15vh;
 }
-.footer {
-  width: 60%;
-  height: 15%;
-}
+
 .remark {
   width: 60%;
-  height: 70%;
+  height: 75vh;
 }
+
+.footer {
+  width: 60%;
+  height: 10vh;
+}
+
 .sidebar {
   width: 40%;
   height: 100%;
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.menu {
+  width: 100%;
+  height: 40%;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: 0; */
+}
+
+.collection {
+  width: 100%;
+  height: 55%;
+  /* position: absolute; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* overflow-y: scroll; */
 }

@@ -4,7 +4,12 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <h3>Footer</h3>
+      <p>
+        <b>Quick Remark</b> © { new Date().getFullYear() } by <span> </span>
+        <a href="https://beletsky.dev/" target="_blank" rel="noopener noreferrer">
+          Pavel Beletsky
+        </a>
+      </p>
     </div>
   )
 }

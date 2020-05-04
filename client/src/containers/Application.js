@@ -11,9 +11,11 @@ const Application = () => {
   return (
     <div className="application">
       {/* <Temp /> */}
-      <Header />
-      <Remark />
-      <Footer />
+      <div className="main">
+        <Header />
+        <Remark />
+        <Footer />
+      </div>
       <Sidebar />
     </div>
   )
